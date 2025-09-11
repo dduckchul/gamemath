@@ -8,7 +8,7 @@ const std::size_t GameEngine::QuadMesh = std::hash<std::string>()("SM_Quad");
 
 // ≈ÿΩ∫√≥
 const std::size_t GameEngine::BaseTexture = std::hash<std::string>()("Base");
-const std::string GameEngine::CharacterTexturePath("CKMan.png");
+const std::string GameEngine::CharacterTexturePath("Resource/CKMan.png");
 
 struct GameObjectCompare
 {
