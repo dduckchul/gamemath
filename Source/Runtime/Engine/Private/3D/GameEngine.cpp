@@ -19,7 +19,7 @@ const std::size_t GameEngine::PlaneMesh = std::hash<std::string>()("SM_Plane");
 
 // ≈ÿΩ∫√≥
 const std::size_t GameEngine::BaseTexture = std::hash<std::string>()("Base");
-const std::string GameEngine::CharacterTexturePath("CKMan.png");
+const std::string GameEngine::CharacterTexturePath("Resource/CKMan.png");
 
 struct GameObjectCompare
 {
