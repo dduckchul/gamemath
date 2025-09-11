@@ -8,12 +8,16 @@
 
 Texture::Texture(std::string InFileName)
 {
-	FILE* f = NULL;
-	if (0 != fopen_s(&f, InFileName.c_str(), "rb"))
-	{
-		return;
-	}
-	LoadFromFile(f);
+	// 디버깅용 출력 추가
+    printf("Trying to load texture: %s\n", InFileName.c_str());
+
+    FILE* f = NULL;
+    if (0 != fopen_s(&f, InFileName.c_str(), "rb"))
+    {
+        printf("Failed to open file: %s\n", InFileName.c_str());
+        return;
+    }
+    LoadFromFile(f);
 }
 
 Texture::Texture(std::wstring InFileName)
